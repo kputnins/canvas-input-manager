@@ -1,6 +1,6 @@
 {
   "name": "@kputnins/canvas-input-manager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple canvas input manage",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

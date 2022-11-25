@@ -38,12 +38,12 @@ export class InputManager {
 
   private static onMouseDown(event: MouseEvent): void {
     InputManager.mouseButtons.set(event.button, true);
-    MessageManager.send(InputEventMessage.MOUSE_UP, "INPUT_MANAGER", event);
+    MessageManager.send(InputEventMessage.MOUSE_DOWN, "INPUT_MANAGER", event);
   }
 
   private static onMouseUp(event: MouseEvent): void {
     InputManager.mouseButtons.delete(event.button);
-    MessageManager.send(InputEventMessage.MOUSE_DOWN, "INPUT_MANAGER", event);
+    MessageManager.send(InputEventMessage.MOUSE_UP, "INPUT_MANAGER", event);
   }
 
   public static isMouseDown(eventButton: number): boolean {
